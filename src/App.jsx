@@ -1,45 +1,37 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import {
+  Container,
+  Tabs,
+  Tab,
+  TabList,
+  TabPanels,
+  TabPanel,
+} from "@chakra-ui/react";
+import Momo from "./components/momo";
+import Timo from "./components/timo";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      <Container my={10}>
+        <Tabs isFitted variant="enclosed">
+          <TabList mb="1em">
+            <Tab _selected={{ color: "white", bg: "pink.500" }}>Momo</Tab>
+            <Tab _selected={{ color: "white", bg: "blue.500" }}>
+              Ngân hàng Timo
+            </Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Momo />
+            </TabPanel>
+            <TabPanel>
+              <Timo />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Container>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
