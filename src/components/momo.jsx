@@ -17,8 +17,13 @@ import {
   Td,
   TableContainer,
 } from "@chakra-ui/react";
-import img from "../quyen-momo.jpeg";
-import { TriangleDownIcon, SearchIcon, ChatIcon } from "@chakra-ui/icons";
+import qrMomo from "../quyen-momo.png";
+import {
+  TriangleDownIcon,
+  SearchIcon,
+  ChatIcon,
+  HamburgerIcon,
+} from "@chakra-ui/icons";
 
 function Momo() {
   const [transId, setTransId] = useState("");
@@ -46,21 +51,22 @@ function Momo() {
   return (
     <Center>
       <Flex alignItems="center" direction="column">
-        <Text fontSize="lg">Mở app Momo</Text>
-        <TriangleDownIcon my="1" color="gray.500" />
-        <Text fontSize="lg">Quét mã QR</Text>
-        <TriangleDownIcon my="1" color="gray.600" />
-        <Box
-          boxShadow="md"
-          boxSize="sm"
-          borderWidth="1px"
-          borderRadius="lg"
-          overflow="hidden"
-          my="1"
-        >
-          <Image src={img} alt="Quyen Momo" />
-        </Box>
-        <TriangleDownIcon mb="1" color="gray.700" />
+        <Text fontSize="lg">(PC) Mở app MoMo và quét mã QR</Text>
+        <HamburgerIcon my="1" color="gray.500" />
+        <Text fontSize="lg">(Điện thoại) Nhấn vào mã QR</Text>
+        <TriangleDownIcon my="1" color="gray.700" />
+        <Link href="https://page.momoapp.vn/ilaqKqDNzPj" isExternal>
+          <Box
+            boxShadow="md"
+            borderWidth="1px"
+            borderRadius="lg"
+            overflow="hidden"
+            my="1"
+          >
+            <Image src={qrMomo} alt="Scan Quyen Momo" />
+          </Box>
+        </Link>
+        <TriangleDownIcon my="1" color="gray.900" />
         <Text fontSize="lg">Kiểm tra giao dịch</Text>
         <Stack spacing={3} px="3">
           <Flex alignItems="center" mt="2">

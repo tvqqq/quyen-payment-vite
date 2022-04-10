@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-image: url("./pattern1.svg"), url("./pattern2.svg"),
+    url("./pattern3.svg"), linear-gradient(to top, #fff, #fffbfe),
+    linear-gradient(to top, #fff, #fffbfe);
+  background-repeat: repeat, no-repeat, no-repeat, repeat-x;
+  background-position: left top, left top, right bottom;
 }
 
 .App-logo {
