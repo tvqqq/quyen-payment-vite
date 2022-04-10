@@ -19,13 +19,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Container
-        px={(0, 5)}
-        py={10}
-        boxShadow="lg"
-        background="white"
-        rounded="lg"
-      >
+      <Container p={[3, 10]} boxShadow="lg" background="white" rounded="lg">
         <Flex
           alignItems="center"
           justifyContent="center"
