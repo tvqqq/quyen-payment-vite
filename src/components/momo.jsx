@@ -52,7 +52,7 @@ function Momo() {
     <Center>
       <Flex alignItems="center" direction="column">
         <Text fontSize="lg">(PC) Mở app MoMo và quét mã QR</Text>
-        <HamburgerIcon my="1" color="gray.500" />
+        <HamburgerIcon my="2" color="gray.500" />
         <Text fontSize="lg">(Điện thoại) Nhấn vào mã QR</Text>
         <TriangleDownIcon my="1" color="gray.700" />
         <Link href="https://page.momoapp.vn/ilaqKqDNzPj" isExternal>
@@ -63,16 +63,21 @@ function Momo() {
             overflow="hidden"
             my="1"
           >
-            <Image src={qrMomo} alt="Scan Quyen Momo" />
+            <Image src={qrMomo} alt="Scan me" />
           </Box>
         </Link>
         <TriangleDownIcon my="1" color="gray.900" />
         <Text fontSize="lg">Kiểm tra giao dịch</Text>
+        <Text fontSize="sm" color="gray.500">
+          (Coming soon)
+        </Text>
         <Stack spacing={3} px="3">
           <Flex alignItems="center" mt="2">
             <Input
               placeholder="Mã giao dịch"
               variant="filled"
+              _placeholder={{ opacity: 1, color: "gray.500" }}
+              isDisabled
               onChange={(e) => setTransId(e.target.value)}
             />
             <IconButton
@@ -82,6 +87,7 @@ function Momo() {
               icon={<SearchIcon />}
               variant="outline"
               isLoading={isLoading}
+              isDisabled
               onClick={() => findTransactionId()}
             />
           </Flex>
