@@ -6,7 +6,6 @@ import {
   Flex,
   IconButton,
   Badge,
-  Tooltip,
   Alert,
   AlertIcon,
   Link,
@@ -31,14 +30,12 @@ function Bitcoin() {
           <Flex alignItems="center">
             <Text m="1">32PKD7Gs9CU8Se1zKft23zVHmWwJSVQctB</Text>
             <CopyToClipboard text="32PKD7Gs9CU8Se1zKft23zVHmWwJSVQctB">
-              <Tooltip label="Copy" hasArrow arrowSize={15}>
-                <IconButton
-                  size="xs"
-                  icon={<CopyIcon />}
-                  variant="outline"
-                  colorScheme="teal"
-                />
-              </Tooltip>
+              <IconButton
+                size="xs"
+                icon={<CopyIcon />}
+                variant="outline"
+                colorScheme="teal"
+              />
             </CopyToClipboard>
           </Flex>
         </Flex>

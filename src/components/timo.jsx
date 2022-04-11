@@ -17,7 +17,6 @@ import {
   Td,
   TableContainer,
   Badge,
-  Tooltip,
 } from "@chakra-ui/react";
 import qrTimo from "../quyen-timo.jpeg";
 import {
@@ -54,14 +53,12 @@ function Timo() {
           </Badge>
           <Text mx="2">9017041090402</Text>
           <CopyToClipboard text="9017041090402">
-            <Tooltip label="Copy" hasArrow arrowSize={15}>
-              <IconButton
-                size="xs"
-                icon={<CopyIcon />}
-                variant="outline"
-                colorScheme="teal"
-              />
-            </Tooltip>
+            <IconButton
+              size="xs"
+              icon={<CopyIcon />}
+              variant="outline"
+              colorScheme="teal"
+            />
           </CopyToClipboard>
         </Flex>
         <Flex alignItems="center" direction="row" my="1">
@@ -70,14 +67,12 @@ function Timo() {
           </Badge>
           <Text mx="2">TAT VI QUYEN</Text>
           <CopyToClipboard text="TAT VI QUYEN">
-            <Tooltip label="Copy" hasArrow arrowSize={15}>
-              <IconButton
-                size="xs"
-                icon={<CopyIcon />}
-                variant="outline"
-                colorScheme="orange"
-              />
-            </Tooltip>
+            <IconButton
+              size="xs"
+              icon={<CopyIcon />}
+              variant="outline"
+              colorScheme="orange"
+            />
           </CopyToClipboard>
         </Flex>
         <HamburgerIcon my="2" color="gray.500" />
