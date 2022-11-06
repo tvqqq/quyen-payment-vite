@@ -11,11 +11,11 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Momo from "./components/momo";
-import Timo from "./components/timo";
 import btc from "./Bitcoin_evergreen.png";
 import logo from "./quyen-payment-logo.png";
 import "./App.css";
 import Bitcoin from "./components/bitcoin";
+import Tcb from "./components/tcb";
 
 function App() {
   return (
@@ -27,13 +27,24 @@ function App() {
           mb="5"
           direction="column"
         >
-          <Text fontSize="2xl">Quyen Payment</Text>
+          <Text
+            fontSize="lg"
+            boxShadow="sm"
+            background="facebook.100"
+            rounded="lg"
+            paddingX={2}
+            paddingY={1}
+          >
+            pay.qeoqeo.com
+          </Text>
           <Image src={logo} alt="Logo" w="8" h="8" />
         </Flex>
         <Tabs isFitted variant="enclosed">
           <TabList mb="1em">
             <Tab _selected={{ color: "white", bg: "pink.500" }}>MoMo</Tab>
-            <Tab _selected={{ color: "white", bg: "blue.500" }}>Ngân hàng</Tab>
+            <Tab _selected={{ color: "white", bg: "blue.500" }}>
+              Techcombank
+            </Tab>
             <Tab _selected={{ color: "white", bg: "orange.500" }}>
               <Flex alignItems="center">
                 Bitcoin <Image src={btc} alt="Bitcoin" w="5" h="5" />
@@ -45,7 +56,7 @@ function App() {
               <Momo />
             </TabPanel>
             <TabPanel>
-              <Timo />
+              <Tcb />
             </TabPanel>
             <TabPanel>
               <Bitcoin />

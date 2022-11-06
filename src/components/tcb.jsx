@@ -18,7 +18,7 @@ import {
   TableContainer,
   Badge,
 } from "@chakra-ui/react";
-import qrTimo from "../quyen-timo.jpeg";
+import qrTimo from "../quyen-techcombank.jpeg";
 import {
   CopyIcon,
   TriangleDownIcon,
@@ -27,7 +27,7 @@ import {
 } from "@chakra-ui/icons";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-function Timo() {
+function Tcb() {
   const [transId, setTransId] = useState("");
   const [find, setFind] = useState(false);
   const [success, setSuccess] = useState(null);
@@ -42,17 +42,17 @@ function Timo() {
             Tên NH
           </Badge>
           <Text mt="1">
-            <span>Viet Capital Bank</span>
+            <span>TECHCOMBANK</span>
             <br />
-            <span>Ngân hàng TMCP Bản Việt</span>
+            <span>Ngân hàng TMCP Kỹ thương Việt Nam</span>
           </Text>
         </Flex>
         <Flex alignItems="center" direction="row" my="1">
           <Badge colorScheme="teal" variant="subtle">
             Số TK
           </Badge>
-          <Text mx="2">9017041090402</Text>
-          <CopyToClipboard text="9017041090402">
+          <Text mx="2">19032608793011</Text>
+          <CopyToClipboard text="19032608793011">
             <IconButton
               size="xs"
               icon={<CopyIcon />}
@@ -76,7 +76,7 @@ function Timo() {
           </CopyToClipboard>
         </Flex>
         <HamburgerIcon my="2" color="gray.500" />
-        <Text fontSize="md">hoặc scan mã VietQR</Text>
+        <Text fontSize="md">hoặc scan mã QR sau</Text>
         <TriangleDownIcon my="1" color="gray.700" />
         <Box
           boxShadow="md"
@@ -181,4 +181,4 @@ function Timo() {
   );
 }
 
-export default Timo;
+export default Tcb;
