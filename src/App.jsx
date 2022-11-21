@@ -44,7 +44,7 @@ function App() {
           <TabList mb="1em">
             <Tab _selected={{ color: "white", bg: "pink.500" }}>MoMo</Tab>
             <Tab _selected={{ color: "white", bg: "blue.500" }}>ZaloPay</Tab>
-            <Tab _selected={{ color: "white", bg: "red.500" }}>Techcombank</Tab>
+            <Tab _selected={{ color: "white", bg: "red.500" }}>Bank</Tab>
             <Tab _selected={{ color: "white", bg: "orange.500" }}>
               <Flex alignItems="center">
                 Bitcoin <Image src={btc} alt="Bitcoin" w="5" h="5" />
