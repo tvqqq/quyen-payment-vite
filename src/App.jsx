@@ -11,6 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Momo from "./components/momo";
+import ZaloPay from "./components/zalopay";
 import btc from "./Bitcoin_evergreen.png";
 import logo from "./quyen-payment-logo.png";
 import "./App.css";
@@ -42,9 +43,8 @@ function App() {
         <Tabs isFitted variant="enclosed">
           <TabList mb="1em">
             <Tab _selected={{ color: "white", bg: "pink.500" }}>MoMo</Tab>
-            <Tab _selected={{ color: "white", bg: "blue.500" }}>
-              Techcombank
-            </Tab>
+            <Tab _selected={{ color: "white", bg: "blue.500" }}>ZaloPay</Tab>
+            <Tab _selected={{ color: "white", bg: "red.500" }}>Techcombank</Tab>
             <Tab _selected={{ color: "white", bg: "orange.500" }}>
               <Flex alignItems="center">
                 Bitcoin <Image src={btc} alt="Bitcoin" w="5" h="5" />
@@ -54,6 +54,9 @@ function App() {
           <TabPanels>
             <TabPanel>
               <Momo />
+            </TabPanel>
+            <TabPanel>
+              <ZaloPay />
             </TabPanel>
             <TabPanel>
               <Tcb />
