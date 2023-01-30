@@ -18,7 +18,7 @@ import {
   TableContainer,
   Badge,
 } from "@chakra-ui/react";
-import qrTcb from "../quyen-tcb151618.JPG";
+import qrTcb from "../quyen-tcb151618.jpeg";
 import {
   CopyIcon,
   TriangleDownIcon,
