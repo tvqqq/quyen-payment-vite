@@ -18,7 +18,7 @@ import {
   TableContainer,
   Badge,
 } from "@chakra-ui/react";
-import qrTimo from "../quyen-techcombank.jpeg";
+import qrTcb from "../quyen-tcb151618.JPG";
 import {
   CopyIcon,
   TriangleDownIcon,
@@ -51,8 +51,8 @@ function Tcb() {
           <Badge colorScheme="teal" variant="subtle">
             Số TK
           </Badge>
-          <Text mx="2">19032608793011</Text>
-          <CopyToClipboard text="19032608793011">
+          <Text mx="2">151618</Text>
+          <CopyToClipboard text="151618">
             <IconButton
               size="xs"
               icon={<CopyIcon />}
@@ -85,7 +85,7 @@ function Tcb() {
           overflow="hidden"
           my="1"
         >
-          <Image src={qrTimo} alt="Scan me" />
+          <Image src={qrTcb} alt="Scan me" />
         </Box>
         <TriangleDownIcon my="1" color="gray.900" />
         <Text fontSize="lg">Kiểm tra giao dịch</Text>
